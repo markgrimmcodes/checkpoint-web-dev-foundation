@@ -8,6 +8,9 @@ html {
   color: blueviolet;
   font-size: 16px;
 }
+body {
+  margin: 0 auto;
+}
 
 /*Specific Styling*/
 
@@ -15,6 +18,17 @@ h1 {
   color: snow;
   font-size: 1rem;
 }
+#navigator {
+  color: snow;
+}
+.sheet-head {
+  margin-bottom: 0;
+}
+.sub-heading {
+  margin-top: 3px;
+  grid-row: 2;
+}
+
 h3 {
   margin: 1.5rem;
 }
@@ -29,20 +43,68 @@ body {
   width: 390px;
   height: 846px;
   background-color: white;
-  position: absolute;
+  position: relative;
   left: 40%;
+  margin: 0;
   display: grid;
+  grid-template-rows: 10% 30% 60%;
 }
 .main-header {
   background-color: blueviolet;
 }
 .box-head {
   position: absolute;
-  display: block;
-  top: 3rem;
   left: 4rem;
+  top: 2.5rem;
 }
 .student-wrap,
 .may-class {
   margin: 1.5rem;
+}
+.student-wrap {
+  width: 100%;
+  position: relative;
+  grid-row: 2;
+  display: grid;
+  margin: 0;
+  padding: 1.5rem;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: ;
+}
+.searchbar {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  border: 1px solid blueviolet;
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+#classes {
+  position: absolute;
+  width: 182px;
+  height: 36px;
+  border: 1px solid blueviolet;
+  grid-column: 1;
+  grid-row: 4;
+}
+#times {
+  position: absolute;
+  width: 131px;
+  height: 36px;
+  border: 1px solid blueviolet;
+  grid-column: 2;
+  grid-row: 4;
+}
+.mayclass {
+  position: absolute;
+  grid-row: 3;
+  display: flex;
+  flex-direction: row;
+}
+.student {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border: 1px solid blueviolet;
 }
