@@ -18,8 +18,17 @@ h1 {
   color: snow;
   font-size: 1rem;
 }
-#navigator {
+.list {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
   color: snow;
+  top: 1.7rem;
+  left: 1.5rem;
+  transition: 0.2s;
+}
+.list:hover {
+  transform: scale(1.2);
 }
 .sheet-head {
   margin-bottom: 0;
@@ -55,7 +64,7 @@ body {
 .box-head {
   position: absolute;
   left: 4rem;
-  top: 2.5rem;
+  top: 1.5rem;
 }
 .student-wrap,
 .may-class {
