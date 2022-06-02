@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+body {
+}
+.container {
+  width: 390px;
+  height: 846px;
+  background-color: blue;
+  position: relative;
+  left: 40%;
+}
