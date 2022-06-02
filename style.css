@@ -1,12 +1,48 @@
+/*General Styling*/
+
 * {
   box-sizing: border-box;
 }
+html {
+  font-family: Montserrat;
+  color: blueviolet;
+  font-size: 16px;
+}
+
+/*Specific Styling*/
+
+h1 {
+  color: snow;
+  font-size: 1rem;
+}
+h3 {
+  margin: 1.5rem;
+}
+.sub-heading,
+h3 {
+  color: darkslategray;
+}
 body {
+  background-color: grey;
 }
 .container {
   width: 390px;
   height: 846px;
-  background-color: blue;
-  position: relative;
+  background-color: white;
+  position: absolute;
   left: 40%;
+  display: grid;
+}
+.main-header {
+  background-color: blueviolet;
+}
+.box-head {
+  position: absolute;
+  display: block;
+  top: 3rem;
+  left: 4rem;
+}
+.student-wrap,
+.may-class {
+  margin: 1.5rem;
 }
