@@ -5,9 +5,11 @@
 }
 html {
   font-family: Montserrat;
-  color: blueviolet;
+
   font-size: 16px;
   --theme-color: #6a1cc3;
+  --accent-color: snow;
+  color: var(--theme-color);
 }
 body {
   margin: 0 auto;
@@ -16,16 +18,17 @@ body {
 /*Specific Styling*/
 
 h1 {
-  color: snow;
+  color: var(--accent-color);
   font-size: 1rem;
 }
 .list {
   position: absolute;
   width: 2rem;
   height: 2rem;
-  color: snow;
+  color: var(--accent-color);
   top: 1.7rem;
   left: 1.5rem;
+
   transition: 0.2s;
 }
 
@@ -48,12 +51,13 @@ body {
 .container {
   width: 390px;
   height: 846px;
-  background-color: white;
-  position: relative;
+  background-color: var(--accent-color);
+  position: absolute;
   left: 40%;
   margin: 0;
   display: grid;
   grid-template-rows: 10% 30% 60%;
+  box-shadow: 5px 10px var(--theme-color);
 }
 .main-header {
   background-color: var(--theme-color);
@@ -111,7 +115,7 @@ select {
 .may-class {
   width: 100%;
   position: absolute;
-  display: flex;
+  _display: flex;
   left: 1.5rem;
   margin: 0;
   grid-row: 3;
@@ -166,7 +170,7 @@ select {
 }
 .glass {
   position: absolute;
-  background-color: snow;
+  background-color: var(--accent-color);
   color: var(--theme-color);
   transform: scale(1.5);
   border: none;
@@ -203,12 +207,23 @@ select {
 }
 .navilist {
   position: absolute;
+  border: none;
+  color: transparent;
   width: 2rem;
   height: 2rem;
-  opacity: 0;
+  background-color: transparent;
   top: 1.7rem;
   left: 1.5rem;
 }
-.navilist:hover > .list {
-  transform: scale(1.2);
+
+.navi-options {
+  background-color: var(--accent-color);
+  color: var(--theme-color);
 }
+
+/* not working, whyyyyyyyyyyyyyyyyy
+
+.navilist:hover + .list {
+  transform: scale(1.3);
+}
+*/
