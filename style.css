@@ -1,3 +1,4 @@
+/* General */
 * {
   box-sizing: border-box;
   _border: 0.3px solid black;
@@ -6,10 +7,12 @@ html {
   font-size: 16px;
   --theme-color: #6a1cc3;
   --background-color: snow;
+  --subheader-color: gray;
   font-family: "Montserrat", sans-serif;
-  background: gray;
+  background: var(--subheader-color);
   cursor: default;
 }
+/*specific*/
 body {
   margin: 0 auto;
   margin-top: 1rem;
@@ -42,24 +45,28 @@ main {
   font-size: 0.6rem;
 }
 
-h2 {
-  margin-top: 0;
-}
 #students-header {
-  color: gray;
+  color: var(--subheader-color);
 }
 .head-two {
   margin-bottom: 0;
 }
 p {
   margin-top: 0.2rem;
-  color: grey;
+  color: var(--subheader-color);
 }
 #main-navi {
   all: unset;
   width: 3rem;
   height: 3rem;
+  border-radius: 15px;
 }
+#main-navi:hover {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
 .list {
   position: absolute;
   width: 3rem;
@@ -94,6 +101,7 @@ form {
   padding: 0.5rem;
   border: 1px solid var(--theme-color);
   border-radius: 2px;
+  cursor: auto;
 }
 ::placeholder {
   color: var(--theme-color);
@@ -135,6 +143,9 @@ button {
   border-radius: 2px;
   font-weight: bold;
   text-align: center;
+}
+.student-dropdown {
+  cursor: pointer;
 }
 #student-list {
   display: flex;
